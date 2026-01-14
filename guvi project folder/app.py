@@ -1,5 +1,4 @@
-import streamlit as st
-import pandas as pd
+
 #import mysql.connector
 
 
@@ -187,5 +186,6 @@ if st.session_state.logged_in:
             conn.commit()
             st.success(f"Query {query_id} closed successfully")
             st.rerun()
+
 
         conn.close()
